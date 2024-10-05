@@ -13,10 +13,6 @@ import SkillsPage from './components/pages/Skills';
 import ProjectPage from './components/pages/Project';
 import ContactPage from './components/pages/Contact';
 
-
-
-
-
 function App() {
   return (
     <Router>

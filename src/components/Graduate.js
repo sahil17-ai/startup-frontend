@@ -26,7 +26,7 @@ const Graduate = () => {
             <Experience active={activeTab === 'experience'} />
             <Skills active={activeTab === 'skills'} />
             <Project active={activeTab === 'project'} />
-            <Contact active={activeTab === 'contact'} /> {/* Include the Contact component */}
+            <Contact active={activeTab === 'contact'} />
         </div>
     );
 };
