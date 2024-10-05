@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/bimbo');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1B1B1B;
+    color: #eef8ce;
+    background-size: cover;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-fit {
+    width: min(1200px, 90vw);
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+    padding-block: 10em;
+}
+
+header {
+    padding-block: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background-color: #1B1B1B11;
+    background-image: repeating-linear-gradient(to right, transparent 0 500px, #eee1 500px 501px);
+}
+
+header .content-fit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .content-fit nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+#banner .title {
+    color: #d1ff48;
+    font-size: 11em;
+    font-family: "devil breeze";
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+#banner .title::before {
+    content: attr(data-before);
+    position: absolute;
+    top: 0.5em;
+    inset: 0.66em 0 0 0;
+    z-index: -1;
+    color: #445022;
+}
+
+.section .decorate {
+    position: absolute;
+}
+
+#intro .content-fit {
+    display: flex;
+    gap: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .number {
+    font-family: "devil breeze";
+    font-size: 15em;
+    font-weight: bold;
+    color: #d1ff48;
+}
+
+.section .des {
+    width: 50%;
+}
+
+.section .des .title {
+    font-family: "devil breeze";
+    font-size: 4em;
+    color: #d1ff48;
+}
+
+.section .des p {
+    margin-block: 1em;
+    line-height: 1.4em;
+}
+
+#contact table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#contact table td {
+    padding: 10px;
+}
+
+#contact .sign {
+    margin-top: 20px;
+    font-family: "devil breeze";
+    font-size: 2em;
+    color: #d1ff48;
+}
+
+.logout-button {
+    background-color: #d1ff48; /* Button background color */
+    border: none;
+    color: #1B1B1B; /* Text color */
+    padding: 10px 20px;
+    margin-left: 20px; /* Spacing from the navigation */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #a5c034; /* Darker shade on hover */
+}
+
+.dropdown-button {
+    margin-right: 150px; /* Adjust this value as needed */
+  }
+  
